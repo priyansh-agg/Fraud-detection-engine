@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  transaction-service:
+    build: ./services/transaction-service
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./services/transaction-service/.env
